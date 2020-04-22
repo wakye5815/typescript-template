@@ -1,0 +1,34 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upgrade:dep": "npx npm-check-updates -u && npm install",
+    "start": "ts-node src/index.ts",
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix"
+  },
+  "author": "wakye",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.13.2",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "eslint"
+  }
+}
