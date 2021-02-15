@@ -2,12 +2,25 @@
   "compilerOptions": {
     "target": "ES2019",
     "module": "commonjs",
-    "strict": true,
-    "outDir": "./dist",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["src/main/*"]
+    }
   },
   "include": [
-    "src/**/*"
+    "src"
   ]
 }

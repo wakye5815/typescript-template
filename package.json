@@ -2,26 +2,35 @@
   "name": "typescript-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "upgrade:dep": "npx npm-check-updates -u && npm install",
+    "preinstall": "npx only-allow yarn",
+    "upgrade:dep": "npx npm-check-updates -u && yarn install",
     "start": "ts-node src/index.ts",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --fix"
+    "lint:fmt": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "test:jest": "jest",
+    "test:types": "tsc --noEmit"
   },
-  "author": "wakye",
+  "author": "wakye5815",
   "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.14.28",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  },
   "devDependencies": {
-    "@types/node": "^13.13.2",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
-    "ts-node": "^8.9.0",
-    "typescript": "^3.8.3",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.3",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.1.7",
-    "prettier": "^2.0.5"
+    "@types/jest": "^26.0.20",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^5.0.9",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.1"
   },
   "husky": {
     "hooks": {
