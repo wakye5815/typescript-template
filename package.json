@@ -15,22 +15,22 @@
   "author": "wakye5815",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^15.12.4",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.4"
+    "@types/node": "^17.0.25",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@typescript-eslint/eslint-plugin": "^4.27.0",
-    "@typescript-eslint/parser": "^4.27.0",
-    "eslint": "^7.29.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
-    "jest": "^27.0.4",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1",
-    "ts-jest": "^27.0.3"
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.4.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4"
   },
   "husky": {
     "hooks": {
